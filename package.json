@@ -1,0 +1,43 @@
+{
+  "version": "0.0.1",
+  "name": "remove_connection",
+  "description": "remove Connection header from http(s) response",
+  "keywords": [
+    "connection",
+    "header"
+  ],
+  "preferGlobal": false,
+  "homepage": "http://supergiovane.tk/#/remove_connection",
+  "author": {
+    "name": "hex7c0",
+    "email": "hex7c0@gmail.com",
+    "url": "http://hex7c0.tk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hex7c0/remove_connection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hex7c0/remove_connection/issues",
+    "email": "hex7c0@gmail.com"
+  },
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coveralls": "~2.11",
+    "express": "~4.13",
+    "istanbul": "~0.3",
+    "mocha": "~2.2",
+    "supertest": "~1.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "mocha --bail --check-leaks",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
+  },
+  "license": "GPL-3.0"
+}
