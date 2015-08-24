@@ -92,7 +92,8 @@ describe('middleware', function() {
             assert.equal(res.header['undefined'], undefined);
             assert.ok(res.header.connection == undefined || 'close',
               'node@~0.10');
-            assert.equal(res.headers.connection, undefined);
+            assert.ok(res.headers.connection == undefined || 'close',
+              'node@~0.10');
             done();
           });
       });
@@ -124,7 +125,8 @@ describe('middleware', function() {
             assert.equal(res.header['undefined'], undefined);
             assert.ok(res.header.connection == undefined || 'close',
               'node@~0.10');
-            assert.equal(res.headers.connection, undefined);
+            assert.ok(res.headers.connection == undefined || 'close',
+              'node@~0.10');
             done();
           });
       });
@@ -149,7 +151,8 @@ describe('middleware', function() {
             assert.equal(res.header['undefined'], undefined);
             assert.ok(res.header.connection == undefined || 'close',
               'node@~0.10');
-            assert.equal(res.headers.connection, undefined);
+            assert.ok(res.headers.connection == undefined || 'close',
+              'node@~0.10');
             done();
           });
       });
