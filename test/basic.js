@@ -96,14 +96,16 @@ describe('basic', function() {
     it('shouldn\'t get "Connection" header, after `res.shouldKeepAlive`',
       function(done) {
 
-        request(app).get('/').expect(200).end(function(err, res) {
+        request(app).get('/').expect(200).end(
+          function(err, res) {
 
-          assert.equal(err, null);
-          assert.equal(res.header['undefined'], undefined);
-          assert.equal(res.header.connection, undefined);
-          assert.equal(res.headers.connection, undefined);
-          done();
-        });
+            assert.equal(err, null);
+            assert.equal(res.header['undefined'], undefined);
+            assert.ok(res.header.connection == undefined || 'close',
+              'node@~0.10');
+            assert.equal(res.headers.connection, undefined);
+            done();
+          });
       });
 
     before(function(done) {
@@ -130,14 +132,16 @@ describe('basic', function() {
     it('shouldn\'t get "Connection" header, after `Object.defineProperty`',
       function(done) {
 
-        request(app).get('/').expect(200).end(function(err, res) {
+        request(app).get('/').expect(200).end(
+          function(err, res) {
 
-          assert.equal(err, null);
-          assert.equal(res.header['undefined'], undefined);
-          assert.equal(res.header.connection, undefined);
-          assert.equal(res.headers.connection, undefined);
-          done();
-        });
+            assert.equal(err, null);
+            assert.equal(res.header['undefined'], undefined);
+            assert.ok(res.header.connection == undefined || 'close',
+              'node@~0.10');
+            assert.equal(res.headers.connection, undefined);
+            done();
+          });
       });
 
     before(function(done) {
@@ -157,14 +161,16 @@ describe('basic', function() {
     it('shouldn\'t get "Connection" header, after `res.setHeader`',
       function(done) {
 
-        request(app).get('/').expect(200).end(function(err, res) {
+        request(app).get('/').expect(200).end(
+          function(err, res) {
 
-          assert.equal(err, null);
-          assert.equal(res.header['undefined'], undefined);
-          assert.equal(res.header.connection, undefined);
-          assert.equal(res.headers.connection, undefined);
-          done();
-        });
+            assert.equal(err, null);
+            assert.equal(res.header['undefined'], undefined);
+            assert.ok(res.header.connection == undefined || 'close',
+              'node@~0.10');
+            assert.equal(res.headers.connection, undefined);
+            done();
+          });
       });
   });
 });
