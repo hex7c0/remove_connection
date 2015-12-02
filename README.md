@@ -1,4 +1,4 @@
-# [remove_connection](http://supergiovane.tk/#/remove_connection)
+# [remove_connection](https://github.com/hex7c0/remove_connection)
 
 [![NPM version](https://img.shields.io/npm/v/remove_connection.svg)](https://www.npmjs.com/package/remove_connection)
 [![Linux Status](https://img.shields.io/travis/hex7c0/remove_connection.svg?label=linux)](https://travis-ci.org/hex7c0/remove_connection)

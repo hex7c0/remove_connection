@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "remove_connection",
   "description": "remove Connection header from http(s) response",
   "keywords": [
@@ -7,7 +7,7 @@
     "header"
   ],
   "preferGlobal": false,
-  "homepage": "http://supergiovane.tk/#/remove_connection",
+  "homepage": "https://github.com/hex7c0/remove_connection",
   "author": {
     "name": "hex7c0",
     "email": "hex7c0@gmail.com",
