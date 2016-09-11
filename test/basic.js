@@ -40,7 +40,7 @@ describe('basic', function() {
 
       request(app).get('/').expect(200).end(function(err, res) {
 
-        assert.equal(err, null);
+        assert.ifError(err);
         assert.equal(res.header['undefined'], undefined);
         assert.notEqual(res.header.connection, undefined);
         assert.notEqual(res.headers.connection, undefined);
@@ -68,7 +68,7 @@ describe('basic', function() {
 
       request(app).get('/').expect(200).end(function(err, res) {
 
-        assert.equal(err, null);
+        assert.ifError(err);
         assert.equal(res.header['undefined'], undefined);
         assert.equal(res.header.connection, 'close');
         assert.equal(res.headers.connection, 'close');
@@ -99,7 +99,7 @@ describe('basic', function() {
         request(app).get('/').expect(200).end(
           function(err, res) {
 
-            assert.equal(err, null);
+            assert.ifError(err);
             assert.equal(res.header['undefined'], undefined);
             assert.ok(res.header.connection == undefined || 'close',
               'node@~0.10');
@@ -136,7 +136,7 @@ describe('basic', function() {
         request(app).get('/').expect(200).end(
           function(err, res) {
 
-            assert.equal(err, null);
+            assert.ifError(err);
             assert.equal(res.header['undefined'], undefined);
             assert.ok(res.header.connection == undefined || 'close',
               'node@~0.10');
@@ -166,7 +166,7 @@ describe('basic', function() {
         request(app).get('/').expect(200).end(
           function(err, res) {
 
-            assert.equal(err, null);
+            assert.ifError(err);
             assert.equal(res.header['undefined'], undefined);
             assert.ok(res.header.connection == undefined || 'close',
               'node@~0.10');
