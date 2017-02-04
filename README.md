@@ -1,7 +1,7 @@
 # [remove_connection](https://github.com/hex7c0/remove_connection)
 
 [![NPM version](https://img.shields.io/npm/v/remove_connection.svg)](https://www.npmjs.com/package/remove_connection)
-[![Linux Status](https://img.shields.io/travis/hex7c0/remove_connection.svg?label=linux)](https://travis-ci.org/hex7c0/remove_connection)
+[![Linux Status](https://img.shields.io/travis/hex7c0/remove_connection.svg?label=linux-osx)](https://travis-ci.org/hex7c0/remove_connection)
 [![Windows Status](https://img.shields.io/appveyor/ci/hex7c0/remove_connection.svg?label=windows)](https://ci.appveyor.com/project/hex7c0/remove_connection)
 [![Dependency Status](https://img.shields.io/david/hex7c0/remove_connection.svg)](https://david-dm.org/hex7c0/remove_connection)
 [![Coveralls](https://img.shields.io/coveralls/hex7c0/remove_connection.svg)](https://coveralls.io/r/hex7c0/remove_connection)
